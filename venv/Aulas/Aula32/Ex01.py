@@ -21,3 +21,14 @@ elif 18 <= hora <=23:
 else:
     print("Hora inválida!")
 """
+
+nome = input("Digite seu primeiro nome: ")
+
+quantidade_caracteres = len(nome)
+
+if quantidade_caracteres <= 4:
+    print("Seu nome é curto.")
+elif  5 == quantidade_caracteres <= 6:
+    print("Seu nome é normal.")
+elif quantidade_caracteres > 6:
+    print("Seu nome é grande.")
