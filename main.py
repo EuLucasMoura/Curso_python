@@ -1,16 +1,21 @@
-# This is a sample Python script.
+import os
+produtos = []
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def menu():
+    print("-" * 5 + ' Menu de Produtos ' + "-" * 5)
+    print("-" * 5 + ' Digite 1 para adicionar ' + "-" * 5)
+    print("-" * 5 + ' Digite 2 para remover ' + "-" * 5)
+    print("-" * 5 + ' Digite 3 para listar ' + "-" * 5)
+    print("-" * 5 + ' Digite 4 para sair ' + "-" * 5)
 
+while True:  # mais legível que while 1 != 0
+    menu()
+    opcao = int(input('Escolha uma opção: '))
+    if opcao == 1:
+        os.system('cls' if os.name == 'nt' else 'clear')  # Limpa a tela
+        produto = input('Insira um produto: ')
+        produtos.append(produto)
+    elif opcao == 4:  # condição de saída
+        break
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print('Programa encerrado.')

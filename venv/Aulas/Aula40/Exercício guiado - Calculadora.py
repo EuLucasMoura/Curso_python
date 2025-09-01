@@ -30,23 +30,14 @@ while opcao != "5":
 print("Calculadora encerrada.")
 """
 
-while True:
-    n1 = int(input("Digite um valor: "))
-    n2 = int(input("Digite outro valor: "))
-
-
-
-
-
-
-
-
-
-
-
-
-    sair = input("Deseja sair? Digite [s]: ").lower().startswith("s")
-    if sair is True:
-        print("Encerrando calculadora...")
-        break
-print("Calculadora encerrada.")
+linhas = 2
+colunas = 2
+ 
+linha = 1
+while linha <= linhas:
+    coluna = 1
+    while coluna <= colunas:
+        print(linha, coluna)
+        coluna += 1
+    linha += 1
+ 
